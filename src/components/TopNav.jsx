@@ -24,7 +24,7 @@ export default function TopNav() {
         setSearchValue(target.value)
     }
     return (
-        <nav className='lg:px-4 px-2 dark:bg-black dark:text-white py-1 w-full hi-16 flex justify-between items-center'>
+        <nav className='lg:px-4 px-4 dark:bg-black dark:text-white py-1 w-full hi-16 flex justify-between items-center'>
             <div className='flex justify-center items-center space-x-3'>
                 <Menu size={35} className='hover:bg-gray-200 hidden lg:block dark:hover:bg-zinc-800 cursor-pointer rounded-full' />
                 <Link className='flex justify-center h-full items-center' href={''}>
