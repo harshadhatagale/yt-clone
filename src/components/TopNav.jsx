@@ -17,19 +17,19 @@ const roboto = Roboto({
     weight: ['100', '300', '400', '500', '700', '900']
 })
 
-export default function TopNav() {
+export default function TopNav({onMenuClick}) {
     const [searchValue, setSearchValue] = useState("")
 
     const searchTextHandler = (e) => {
         setSearchValue(e.target.value)
     }
     return (
-        <nav className='lg:px-4 px-4 dark:bg-black dark:text-white w-full h-16 flex justify-between items-center'>
+        <nav className='lg:px-4 px-3 dark:bg-black dark:text-white w-full h-16 flex justify-between items-center'>
             <div className='flex justify-center items-center space-x-3'>
-            <Menu size={35} className='text-white mx-3 hover:bg-gray-200 hidden lg:block p-1 dark:hover:bg-zinc-700 cursor-pointer rounded-full' />
+            <Menu size={35} onClick={onMenuClick} className='text-white mx-2 hover:bg-gray-200 hidden lg:block p-1 dark:hover:bg-zinc-700 cursor-pointer rounded-full' />
                 <Link className='flex justify-center h-full items-center' href={''}>
                     <Image src={logo} alt='logo' width={50} height={50} />
-                    <p className={`${roboto.className} font-semibold text-xl tracking-wide`}>Youtube <sup className='font-normal'>In</sup></p>
+                    <p className={`${roboto.className} font-semibold text-xl tracking-tight`}>Youtube <sup className='font-normal'>In</sup></p>
                 </Link>
             </div>
             <div className='search_bar lg:block hidden outline outline-[0.5px] border-[1px] border-zinc-600 outline-gray-200 dark:outline-zinc-800 w-96 h-10 rounded-3xl'>

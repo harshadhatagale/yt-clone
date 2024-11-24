@@ -1,12 +1,13 @@
-import BottomSideNav from "@/components/BottomSideNav";
-import TopNav from "@/components/TopNav";
+import SideBar from "@/components/Basics/SideBar";
+import Top_Bottom from "@/components/Basics/TopBottomNav";
+
 
 export default function Home() {
   
   return (
     <main>
-      <TopNav/>
-      <BottomSideNav/>
+      <Top_Bottom/>
+      
     </main>
   );
 }
