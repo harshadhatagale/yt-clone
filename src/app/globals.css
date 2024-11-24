@@ -2,3 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    /* Scrollbar track */
+    .scrollbar::-webkit-scrollbar {
+      width: 7px; /* Set the width of the scrollbar */
+    }
+    
+    .scrollbar::-webkit-scrollbar-track {
+      background: transparent; /* Light gray track */
+       /* Rounded edges */
+    }
+    
+    .scrollbar::-webkit-scrollbar-thumb {
+      background: transparent; /* Darker gray thumb */
+       /* Rounded edges */
+    }
+    
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #686868; /* Darker color on hover */
+    }
+  }
+  
