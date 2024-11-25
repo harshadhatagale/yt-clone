@@ -38,7 +38,7 @@ export default function TopNav({onMenuClick}) {
                     <button title='Search' className='w-[15%] flex justify-center border-[1px] border-zinc-600 items-center dark:bg-zinc-800 bg-gray-200 h-full rounded-tr-3xl rounded-br-3xl'><CiSearch size={20} /></button>
                 </div>
             </div>
-            <Link href={'/'} className='lg:hidden'><CiSearch size={20} /></Link>
+            <Link href={'/'} className='lg:hidden mx-3'><CiSearch size={20} /></Link>
             <div className='justify-center items-center space-x-7 hidden lg:flex'>
                 <Link href={"/"} title='Create'><MdOutlineVideoCall size={30} /></Link>
                 <Link href={"/"} title='Notifications'><FaRegBell size={20} /></Link>
