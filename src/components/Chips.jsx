@@ -65,7 +65,7 @@ export default function Chips() {
                 {/* Previous Button */}
                 <button
                     onClick={scrollPrev}
-                    className="absolute hidden lg:block left-0 top-1/2 -translate-y-1/2 z-10 dark:text-white p-2 rounded-full hover:bg-zinc-800 shadow-md"
+                    className="absolute hidden text-black hover:bg-gray-600 lg:block left-0 top-1/2 -translate-y-1/2 z-10 dark:text-white p-2 rounded-full hover:text-white dark:hover:bg-zinc-800 shadow-md"
                 >
                     <FaAngleLeft />
                 </button>
@@ -73,14 +73,14 @@ export default function Chips() {
                     ref={scrollContainerRef}
                     className="flex p-3 w-90% lg:w-[94%] space-x-3 justify-start items-center overflow-x-auto lg:overflow-x-hidden lg:snap-x lg:snap-mandatory rounded-lg"
                 >
-                    <div className='text-white text-base hover:dark:bg-white hover:dark:text-black flex dark:bg-zinc-800 font-semibold dark:text-white cursor-pointer rounded-md shadow-md p-[2px] bg-black hover:bg-gray-200'>
-                        <MdOutlineExplore color='white' size={25} />
+                    <div className='dark:text-white bg-gray-200 text-black hover:dark:text-black text-base hover:dark:bg-white dark:bg-zinc-800 font-semibold hover:bg-gray-200 cursor-pointer rounded-md shadow-md hidden lg:flex p-[2px]'>
+                        <MdOutlineExplore size={25} />
                     </div>
                     {chipsData.map((filter, index) => (
                         <Link
                             href={`?filter=${filter}`}
                             key={index}
-                            className="text-white text-base hover:dark:bg-white hover:dark:text-black flex text-nowrap dark:bg-zinc-800 font-semibold dark:text-white cursor-pointer px-3 rounded-md shadow-md py-[2px] bg-black snap-start flex-shrink-0 hover:bg-gray-200"
+                            className="dark:text-white bg-gray-200 text-black text-base hover:dark:bg-white hover:dark:text-black flex text-nowrap hover:bg-zinc-800 dark:bg-zinc-800 font-semibold cursor-pointer px-3 rounded-md shadow-md hover:text-white py-[2px] snap-start flex-shrink-0"
                         >
                             {filter}
                         </Link>
@@ -90,7 +90,7 @@ export default function Chips() {
                 {/* Next Button */}
                 <button
                     onClick={scrollNext}
-                    className="absolute hidden lg:block right-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full shadow-md dark:text-white hover:bg-zinc-800"
+                    className="absolute hidden text-black hover:bg-gray-600 lg:block right-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full shadow-md dark hover:text-white dark:text-white dark:hover:bg-zinc-800"
                 >
                     <FaAngleRight />
                 </button>
