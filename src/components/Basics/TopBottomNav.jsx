@@ -11,7 +11,7 @@ export default function Top_Bottom() {
     setSideNavOpen((prev)=>!prev)
   }
   return (
-    <div className='select-none'>
+    <div className='select-none z-40'>
       <TopNav onMenuClick= {toggleNav}/>
       <BottomSideNav isOpen= {isSideNavOpen}/>
       <SideBar isOpen= {isSideNavOpen}/>

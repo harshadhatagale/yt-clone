@@ -27,7 +27,7 @@ export default function TopNav({onMenuClick}) {
         <nav className='lg:px-3 px-3 dark:bg-black dark:text-white w-full h-16 flex justify-between items-center'>
             <div className='flex justify-center items-center space-x-3'>
             <Menu size={35} onClick={onMenuClick} className='dark:text-white text-black mx-2 hover:bg-gray-200 hidden lg:block p-1 dark:hover:bg-zinc-700 cursor-pointer rounded-full' />
-                <Link className='flex justify-center h-full items-center' href={''}>
+                <Link className='flex justify-center h-full items-center' href={'/'}>
                     <Image src={logo} alt='logo' width={50} height={50} />
                     <p className={`${roboto.className} font-semibold text-xl tracking-tight`}>Youtube <sup className='font-normal'>In</sup></p>
                 </Link>
