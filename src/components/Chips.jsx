@@ -73,7 +73,7 @@ export default function Chips() {
                     ref={scrollContainerRef}
                     className="flex p-3 w-90% lg:w-[94%] space-x-3 justify-start items-center overflow-x-auto lg:overflow-x-hidden lg:snap-x lg:snap-mandatory rounded-lg"
                 >
-                    <div className='dark:text-white bg-gray-200 text-black hover:dark:text-black text-base hover:dark:bg-white dark:bg-zinc-800 font-semibold hover:bg-gray-200 cursor-pointer rounded-md shadow-md hidden lg:flex p-[2px]'>
+                    <div className='dark:text-white bg-gray-200 text-black hover:dark:text-black text-base hover:dark:bg-white dark:bg-zinc-800 flex font-semibold hover:bg-gray-200 cursor-pointer rounded-md shadow-md lg:hidden p-[2px]'>
                         <MdOutlineExplore size={25} />
                     </div>
                     {chipsData.map((filter, index) => (

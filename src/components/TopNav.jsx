@@ -38,7 +38,7 @@ export default function TopNav({ onMenuClick }) {
                         <button title='Search' className='w-[15%] flex justify-center border-[0.1px] border-zinc-500 items-center dark:bg-zinc-900 bg-gray-200 h-full rounded-tr-3xl rounded-br-3xl'><CiSearch size={24} /></button>
                     </div>
                 </div>
-                <Link href={"/"} className='h-10 w-10 hover:dark:bg-zinc-700 dark:text-white rounded-full flex justify-center items-center dark:bg-zinc-900'>
+                <Link href={"/"} className='h-10 hidden lg:flex w-10 hover:dark:bg-zinc-700 dark:text-white rounded-full justify-center items-center dark:bg-zinc-900'>
                     <MdKeyboardVoice size={24} />
                 </Link>
             </div>
